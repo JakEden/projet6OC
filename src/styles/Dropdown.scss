@@ -1,0 +1,49 @@
+.dropdown {
+
+  border-radius: 5px;
+  background: #FF6060;
+}
+.dropdown p{
+
+margin: 10px;
+  }
+
+.dropdown-container {
+  margin: 10px;
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+.dropdown-title {
+  color: white;
+
+}
+
+.toggle {
+  border: unset;
+  background: none;
+  transition: transform 300ms ease-in-out; 
+
+}
+
+.toggle.rotate {
+  transform: rotate(-180deg); 
+}
+
+.content {
+  background-color: grey;
+  overflow: hidden;
+  border-radius: 0 0 5px 5px;
+  height: 0px;
+  transition: height ease 0.3s;
+}
+
+.content.show {
+  height: auto;
+}
+
+  

@@ -1,0 +1,81 @@
+a {
+  text-decoration: none;
+}
+
+.main_Home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.img_Home {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 25px;
+  }
+
+  .img-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 42px;
+      color: white; 
+  }
+}
+
+.apartment-cards-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #D3D3D3;
+  border-radius: 25px;
+  margin-top: 5%;
+}
+
+.apartment-card {
+  position: relative;
+  max-width: calc(30% - 40px); /* Set the maximum width for 3 cards per row */
+  width: 100%;
+  padding-top:30px;
+  padding-bottom: 30px;
+  text-align: center;
+  margin: 30px; 
+}
+
+.apartment-card img {
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+
+.apartment-card h2 {
+  font-size: 16px;
+  color: white;
+}
+
+.card-content {
+  height: 260px;
+  background-color: #FF6060;
+}
+
+.apartment-card .title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0 0 35px 10px;
+  font-size: 18px;
+  color: white;
+}
