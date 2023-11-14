@@ -4,6 +4,8 @@ import Footer from '../Components/Footer';
 import Dropdown from '../Components/Dropdown';
 import apartmentsData from '../data/logements.json';
 import { useParams } from 'react-router-dom';
+import '../styles/Logement.scss';
+import Carousel from '../Components/Carousel';
 
 function Logement() {
     const { id } = useParams();
@@ -17,6 +19,7 @@ function Logement() {
     return (
         <div>
             <Header />
+            <Carousel images={apartment.pictures} />
             {
                     <div className="appartementInformation">
                         <div className="proprietorAndApartement">
@@ -33,8 +36,8 @@ function Logement() {
 
                         </div>
                         <div className="description-equipements">
-                            <Dropdown titre="Description" description={apartment?.description} />
-                            <Dropdown titre="Équipements" description={equipmentsLogement} />
+                          <div className="descriptionDropdown">   <Dropdown titre="Description" description={apartment?.description} /></div>
+                          <div className="equipmentDropdown"> <Dropdown titre="Équipements" description={equipmentsLogement} /></div>
                         </div>
                     </div>    
             }

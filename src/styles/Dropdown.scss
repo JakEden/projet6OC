@@ -1,7 +1,9 @@
 .dropdown {
-
+  min-width: 45%;
+  min-height: auto;
   border-radius: 5px;
   background: #FF6060;
+  margin: 10px 50px 10px 50px;
 }
 .dropdown p{
 
@@ -9,8 +11,9 @@ margin: 10px;
   }
 
 .dropdown-container {
+  
   margin: 10px;
-  padding-top: 10px;
+  padding-top: 5px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -43,7 +46,9 @@ margin: 10px;
 }
 
 .content.show {
+  margin-top: -2px;
   height: auto;
+  
 }
 
   

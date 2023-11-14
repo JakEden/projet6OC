@@ -1,0 +1,43 @@
+$font-color: #FF6060;
+
+ .appartementInformation
+ {
+    margin: 15px 50px 15px 50px ;
+ }
+.proprietorAndApartement{
+    color: $font-color; 
+    display: flex;
+    justify-content: space-between;
+    .informationApartement {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .proprietorInfo{
+        display: flex;
+        align-items: center;
+        .name {
+            margin: 10px;
+        }
+    }
+    .title {
+        font-size: 36px;
+    }
+    img {
+        max-width: 64px;
+        border-radius: 100px;
+        object-fit: cover;
+    }
+}
+
+
+.description-equipements{
+    display:flex;
+    justify-content: space-between;
+}
+.descriptionDropdown {
+    width: 45%;
+}
+.equipmentDropdown{
+    width:45%;
+}
