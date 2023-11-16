@@ -1,9 +1,10 @@
 .dropdown {
-  min-width: 45%;
-  min-height: auto;
+  max-width: 1023px;
+  min-height: 52px;
   border-radius: 5px;
   background: #FF6060;
-  margin: 10px 50px 10px 50px;
+  margin: 25px 0px 26px 0px;
+  
 }
 .dropdown p{
 
@@ -12,8 +13,11 @@ margin: 10px;
 
 .dropdown-container {
   
-  margin: 10px;
-  padding-top: 5px;
+
+  // margin-top: 50px;
+  padding-top: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -38,7 +42,7 @@ margin: 10px;
 }
 
 .content {
-  background-color: grey;
+  background-color: #F6F6F6;
   overflow: hidden;
   border-radius: 0 0 5px 5px;
   height: 0px;
@@ -46,9 +50,15 @@ margin: 10px;
 }
 
 .content.show {
-  margin-top: -2px;
+  margin-top: 25px;
   height: auto;
   
 }
 
-  
+@media screen and (max-width: 860px) {
+  .dropdown {
+
+    margin: 25px 0px 26px 0px;
+    
+  }
+}

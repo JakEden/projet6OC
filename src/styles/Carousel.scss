@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 30px;
 
   .carousel-image-container {
     position: relative;
@@ -48,5 +49,24 @@
     }
   }
 }
+@media screen and (max-width: 860px) {
+  .image-carousel {
 
+  
+    .carousel-image-container {
+      margin-left: 25px;
+      margin-right: 25px;
 
+      .backArrow {
+        width: 70px;
+      }
+  
+      .forwardArrow {
+        width: 70px;
+      }
+      .image-indicator {
+      display: none;
+      }
+    }
+  }
+}

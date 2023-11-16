@@ -5,6 +5,7 @@ $font-color: #FF6060;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -12,7 +13,15 @@ $font-color: #FF6060;
 .Logo {
     display: flex;
     align-items: center;
+
+    img {
+        width: 100%; 
+        height: auto; 
+        margin-right: 10px; 
+
+    }
 }
+
 
 .Link {
     display: flex;
@@ -45,4 +54,24 @@ $font-color: #FF6060;
         }
     }
 }
+
+@media screen and (max-width: 860px) {
+
+    .Header {
+
+        margin-top: 15px;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    .Link a {
+        font-size: 16px ;
+
+    }
+
+    .Logo img {
+        width: 120px ;
+
+    }
+}
+
 

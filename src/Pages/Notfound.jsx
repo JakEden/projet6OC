@@ -10,7 +10,7 @@ const Notfound = () => {
             <Header/>
             <div className="notfound-container">
             <div><img src={notfound} alt="404" /></div>
-            <p>Oups! La page que vous demandez n'existe pas</p>
+            <p className="containerText">Oups! La page que vous demandez n'existe pas</p>
              <Link to="/">Retourner sur la page d'accueil </Link> 
              </div>
             <Footer/>
