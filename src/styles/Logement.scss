@@ -4,7 +4,11 @@ $font-color: #FF6060;
  {
     margin: 15px 50px 15px 50px ;
  }
- 
+ .logementContainer {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+ }
 .proprietorAndApartement{
     color: $font-color; 
     display: flex;

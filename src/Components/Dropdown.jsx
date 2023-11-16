@@ -10,12 +10,13 @@ function Dropdown(props) {
       <div className="dropdown-container">
         <div className="dropdown-title">{props.titre}</div>
         <button
-          className={`toggle ${isOpen ? 'rotate' : ''}`}
-          onClick={() => setIsOpen(!isOpen)}>
+          className={`toggle ${isOpen ? "rotate" : ""}`}
+          onClick={() => setIsOpen(!isOpen)}
+        >
           <img src={vector} alt="arrow" />
         </button>
       </div>
-      <div className={isOpen ? 'content show' : 'content'}>
+      <div className={isOpen ? "content show" : "content"}>
         <p>{props.description}</p>
       </div>
     </div>
@@ -23,6 +24,3 @@ function Dropdown(props) {
 }
 
 export default Dropdown;
-
-
-

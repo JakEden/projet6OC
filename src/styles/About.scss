@@ -1,4 +1,4 @@
-.containerColapse{
+.containerColapse {
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
@@ -6,9 +6,23 @@
     justify-content: center;
     align-items: center;
 }
+
+.About {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1150px) {
+    .containerColapse {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
 @media screen and (max-width: 860px) {
-    .containerColapse{
-    margin-left: 25px;
-    margin-right: 25px;
+    .containerColapse {
+        margin-left: 25px;
+        margin-right: 25px;
     }
 }

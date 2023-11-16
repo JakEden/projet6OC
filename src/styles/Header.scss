@@ -15,9 +15,9 @@ $font-color: #FF6060;
     align-items: center;
 
     img {
-        width: 100%; 
-        height: auto; 
-        margin-right: 10px; 
+        width: 100%;
+        height: auto;
+        margin-right: 10px;
 
     }
 }
@@ -26,31 +26,33 @@ $font-color: #FF6060;
 .Link {
     display: flex;
     align-items: center;
-.Accueil{
-    margin-right: 20px;
-}
+
+    .Accueil {
+        margin-right: 20px;
+    }
+
     a {
         color: $font-color;
-        
+
         text-decoration: none;
         font-size: 24px;
 
-        position: relative; 
+        position: relative;
 
-        &::before { 
+        &::before {
             content: '';
             position: absolute;
             width: 100%;
-            height: 2px; 
+            height: 2px;
             bottom: 0;
             left: 0;
-            background-color: $font-color; 
-            transform: scaleX(0); 
-            transition: transform 0.3s;  
+            background-color: $font-color;
+            transform: scaleX(0);
+            transition: transform 0.3s;
         }
 
-        &:hover::before { 
-            transform: scaleX(1); 
+        &:hover::before {
+            transform: scaleX(1);
         }
     }
 }
@@ -63,13 +65,14 @@ $font-color: #FF6060;
         margin-left: 25px;
         margin-right: 25px;
     }
+
     .Link a {
-        font-size: 16px ;
+        font-size: 16px;
 
     }
 
     .Logo img {
-        width: 120px ;
+        width: 120px;
 
     }
 }

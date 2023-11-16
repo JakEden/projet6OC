@@ -4,25 +4,25 @@
   border-radius: 5px;
   background: #FF6060;
   margin: 25px 0px 26px 0px;
-  
-}
-.dropdown p{
 
-margin: 10px;
-  }
+}
+
+.dropdown p {
+
+  margin: 10px;
+}
 
 .dropdown-container {
-  
 
-  // margin-top: 50px;
-  padding-top: 16px;
+
+  padding-top: 17px;
   padding-left: 10px;
   padding-right: 10px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  
+
 }
 
 .dropdown-title {
@@ -33,12 +33,12 @@ margin: 10px;
 .toggle {
   border: unset;
   background: none;
-  transition: transform 300ms ease-in-out; 
+  transition: transform 300ms ease-in-out;
 
 }
 
 .toggle.rotate {
-  transform: rotate(-180deg); 
+  transform: rotate(-180deg);
 }
 
 .content {
@@ -52,13 +52,5 @@ margin: 10px;
 .content.show {
   margin-top: 25px;
   height: auto;
-  
-}
 
-@media screen and (max-width: 860px) {
-  .dropdown {
-
-    margin: 25px 0px 26px 0px;
-    
-  }
 }

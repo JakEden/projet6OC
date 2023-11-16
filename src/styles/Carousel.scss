@@ -1,4 +1,3 @@
-
 .image-carousel {
   display: flex;
   align-items: center;
@@ -12,7 +11,7 @@
     margin-right: 50px;
 
     img {
-    object-fit: cover;
+      object-fit: cover;
       width: 100%;
       max-height: 415px;
       margin: 0;
@@ -49,10 +48,11 @@
     }
   }
 }
+
 @media screen and (max-width: 860px) {
   .image-carousel {
 
-  
+
     .carousel-image-container {
       margin-left: 25px;
       margin-right: 25px;
@@ -60,12 +60,13 @@
       .backArrow {
         width: 70px;
       }
-  
+
       .forwardArrow {
         width: 70px;
       }
+
       .image-indicator {
-      display: none;
+        display: none;
       }
     }
   }
