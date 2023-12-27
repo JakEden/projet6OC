@@ -1,14 +1,13 @@
 import React from "react";
-import Header from "../Components/Header";
-import Footer from "../Components/Footer";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import image from "../assets/IMG_About.png";
-import Banner from "../Components/Banner";
-import "../styles/About.scss";
-import Dropdown from "../Components/Dropdown";
+import Banner from "../components/Banner";
+import Dropdown from "../components/Collapse";
 
 const About = () => {
   return (
-    <div className="About">
+    <div className="about">
       <Header />
       <Banner image={image} texte="" />
       <div className="containerColapse">

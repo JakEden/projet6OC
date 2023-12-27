@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import vector from "../assets/Vector.png";
-import "../styles/Dropdown.scss";
+import "../styles/Collapse.scss";
 
-function Dropdown(props) {
+function Collapse(props) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="dropdown">
-      <div className="dropdown-container">
-        <div className="dropdown-title">{props.titre}</div>
+      <div className="dropdownContainer">
+        <div className="dropdownTitle">{props.titre}</div>
         <button
           className={`toggle ${isOpen ? "rotate" : ""}`}
           onClick={() => setIsOpen(!isOpen)}
@@ -23,4 +23,4 @@ function Dropdown(props) {
   );
 }
 
-export default Dropdown;
+export default Collapse;

@@ -1,10 +1,10 @@
-.image-carousel {
+.pictureCarousel {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 30px;
 
-  .carousel-image-container {
+  .carouselImageContainer {
     position: relative;
     width: 100%;
     margin-left: 50px;
@@ -38,7 +38,7 @@
       right: 2%;
     }
 
-    .image-indicator {
+    .imageIndicator {
       color: white;
       position: absolute;
       bottom: 0;
@@ -50,10 +50,10 @@
 }
 
 @media screen and (max-width: 860px) {
-  .image-carousel {
+  .pictureCarousel {
 
 
-    .carousel-image-container {
+    .carouselImageContainer {
       margin-left: 25px;
       margin-right: 25px;
 
@@ -65,7 +65,7 @@
         width: 70px;
       }
 
-      .image-indicator {
+      .imageIndicator {
         display: none;
       }
     }

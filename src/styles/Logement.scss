@@ -32,7 +32,7 @@ $font-color: #FF6060;
             align-items: center;
             
             .name{
-                width: 30px;
+                width: 50px;
                 height: 40px;
                 margin-right: 40px;
             }
@@ -71,6 +71,25 @@ $font-color: #FF6060;
         background-color: $font-color; 
     }  
 }
+@media screen and (max-width: 1225px) {
+    .proprietorAndApartement{
+        .title {
+            font-size: 23px;
+        }
+        .proprietorInfo{
+
+            .rating{
+                
+                img{
+                    
+                    width: 30px;
+                }
+            }
+        }
+    }
+    
+
+}
 @media screen and (max-width: 860px) {
     .proprietorAndApartement{
         display: flex;
@@ -84,11 +103,8 @@ $font-color: #FF6060;
                 }
             }
         }
-        .title {
-            font-size: 26px;
-        }
     }
-    .description-equipements{
+    .descriptionEquipements{
         justify-content: center;
         flex-direction: column;
         margin-bottom: 25px;
@@ -120,7 +136,7 @@ $font-color: #FF6060;
             .namePicture{
                 .name{
                     font-size: 12px;
-                    width: 20px;
+                    width: 40px;
                     height: 30px;
                     margin-right: 20px;
                 }

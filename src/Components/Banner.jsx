@@ -1,10 +1,10 @@
 import React from "react";
-import "../styles/Banner.scss";
+
 function Banner({ image, texte }) {
   return (
-    <div className="img_Home">
+    <div className="imgHome">
       <img src={image} alt="img Home" />
-      <div className="img-text">{texte}</div>
+      <div className="imgText">{texte}</div>
     </div>
   );
 }

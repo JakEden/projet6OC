@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import backArrow from "../assets/arrow_back.png";
 import forwardArrow from "../assets/arrow_forward.png";
-import "../styles/Carousel.scss";
 
 const Carousel = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -21,8 +20,8 @@ const Carousel = ({ images }) => {
   const showNavigation = images.length > 1;
 
   return (
-    <div className="image-carousel">
-      <div className="carousel-image-container">
+    <div className="pictureCarousel">
+      <div className="carouselImageContainer">
         {showNavigation && (
           <button className="backArrow" onClick={handlePrevImage}>
             <img src={backArrow} alt="back arrow" />
@@ -38,7 +37,7 @@ const Carousel = ({ images }) => {
           </button>
         )}
         {showNavigation && (
-          <div className="image-indicator">{`${currentImageIndex + 1}/${
+          <div className="imageIndicator">{`${currentImageIndex + 1}/${
             images.length
           }`}</div>
         )}

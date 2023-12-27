@@ -1,17 +1,16 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "../Pages/Home";
-import About from "../Pages/About";
-import Logement from "../Pages/Logement"; // Import the ApartmentDetail component
-import Notfound from "../Pages/Notfound";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Logement from "../pages/Logement";
+import Notfound from "../pages/Notfound";
 
 function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/apartments/:id" element={<Logement />} />{" "}
-      {/* Add this route for ApartmentDetail */}
+      <Route path="/apartments/:id" element={<Logement />} />
       <Route path="*" element={<Notfound />} />
     </Routes>
   );

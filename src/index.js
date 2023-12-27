@@ -2,8 +2,13 @@ import React from 'react';
 import './styles/Header.scss';
 import './styles/Footer.scss';
 import './styles/Home.scss';
-import ReactDOM from 'react-dom/client';
+import './styles/Banner.scss';
+import './styles/Logement.scss';
+import './styles/About.scss';
+import './styles/NotFound.scss';
+import './styles/Carousel.scss';
 import './styles/index.css';
+import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

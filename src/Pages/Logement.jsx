@@ -1,21 +1,16 @@
 import React from "react";
-import { useParams, Navigate } from "react-router-dom";
-import Header from "../Components/Header";
-import Footer from "../Components/Footer";
-import Dropdown from "../Components/Dropdown";
+import { useParams,} from "react-router-dom";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import Dropdown from "../components/Collapse";
 import apartmentsData from "../data/logements.json";
-import "../styles/Logement.scss";
-import Carousel from "../Components/Carousel";
+import Carousel from "../components/Carousel";
 import starActive from "../assets/star-active.png";
 import starInactive from "../assets/star-inactive.png";
 
 function Logement() {
   const { id } = useParams();
   const apartment = apartmentsData.find((logement) => logement.id === id);
-
-  if (!apartment) {
-    return <Navigate to="/NotFound" />;
-  }
 
   const rating = Number(apartment?.rating);
 
@@ -27,7 +22,7 @@ function Logement() {
     />
   ));
 
-  const equipmentsLogement = apartment?.equipments.map((equipment, index) => (
+  const equipmentsLogement = apartment.equipments.map((equipment, index) => (
     <li key={index}>{equipment}</li>
   ));
 
@@ -44,16 +39,16 @@ function Logement() {
       <div className="appartementInformation">
         <div className="proprietorAndApartement">
           <div className="informationApartement">
-            <span className="title">{apartment?.title}</span>
-            <span className="location">{apartment?.location}</span>
+            <span className="title">{apartment.title}</span>
+            <span className="location">{apartment.location}</span>
             <div className="tags">{tags}</div>
           </div>
           <div className="proprietorInfo">
             <div className="namePicture">
-              <div className="name">{apartment?.host.name}</div>
+              <div className="name">{apartment.host.name}</div>
               <img
                 className="picture"
-                src={apartment?.host.picture}
+                src={apartment.host.picture}
                 alt="Propriétaire"
               />
             </div>
@@ -64,7 +59,7 @@ function Logement() {
           <div className="descriptionDropdown">
             <Dropdown
               titre="Description"
-              description={apartment?.description}
+              description={apartment.description}
             />
           </div>
           <div className="equipmentDropdown">
