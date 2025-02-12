@@ -27,10 +27,12 @@ const Carousel = ({ images }) => {
             <img src={backArrow} alt="back arrow" />
           </button>
         )}
+        <div className="carouselImage">
         <img
           src={images[currentImageIndex]}
           alt={`Slide ${currentImageIndex + 1}`}
         />
+        </div>
         {showNavigation && (
           <button className="forwardArrow" onClick={handleNextImage}>
             <img src={forwardArrow} alt="forward arrow" />
