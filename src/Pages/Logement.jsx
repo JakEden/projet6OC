@@ -1,16 +1,28 @@
-import React from "react";
-import { useParams,} from "react-router-dom";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import Dropdown from "../components/Collapse";
+import React, { useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
+import Dropdown from "../Components/Collapse";
 import apartmentsData from "../data/logements.json";
-import Carousel from "../components/Carousel";
+import Carousel from "../Components/Carousel";
 import starActive from "../assets/star-active.png";
 import starInactive from "../assets/star-inactive.png";
 
 function Logement() {
   const { id } = useParams();
+  const navigate = useNavigate();
+
   const apartment = apartmentsData.find((logement) => logement.id === id);
+
+  useEffect(() => {
+    if (!apartment) {
+      navigate("/*");
+    }
+  }, [apartment, navigate]);
+
+  if (!apartment) {
+    return null;
+  }
 
   const rating = Number(apartment?.rating);
 
@@ -57,10 +69,7 @@ function Logement() {
         </div>
         <div className="description-equipements">
           <div className="descriptionDropdown">
-            <Dropdown
-              titre="Description"
-              description={apartment.description}
-            />
+            <Dropdown titre="Description" description={apartment.description} />
           </div>
           <div className="equipmentDropdown">
             <Dropdown titre="Équipements" description={equipmentsLogement} />

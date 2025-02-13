@@ -19,3 +19,8 @@ $primary-color: black;
     }
 
 }
+@media screen and (max-width: 860px) {
+    .footer {
+        margin-top: 0px;
+    }
+}

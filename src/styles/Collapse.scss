@@ -1,9 +1,8 @@
 .dropdown {
   max-width: 1023px;
   min-height: 52px;
-  border-radius: 5px;
-  background: #FF6060;
   margin: 25px 0px 26px 0px;
+  overflow: hidden
 
 }
 
@@ -14,7 +13,7 @@
 
 .dropdownContainer {
 
-
+  background: #FF6060;
   padding-top: 17px;
   padding-left: 10px;
   padding-right: 10px;
@@ -23,6 +22,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  border-radius: 5px;
 
 }
 
@@ -43,16 +43,27 @@
 }
 
 .content {
+  
   background-color: #F6F6F6;
   overflow: hidden;
   border-radius: 0 0 5px 5px;
   max-height: 0;
-  opacity: 0;
-  transition: max-height 1.5s ease, opacity 0.3s ease 0.3s; 
+  transition: max-height 0.2s ease, opacity 0.1s ease 0.1s; 
 }
 
 .content.show {
   height: auto;
   max-height: 500px; 
   opacity: 1;
+}
+
+@media screen and (max-width: 860px) {
+
+  .dropdown {
+    max-width: 1023px;
+    min-height: 52px;
+    margin: 1% 0px 1% 0px;
+    overflow: hidden
+  
+  }
 }
