@@ -20,9 +20,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   border-radius: 25px;
-
 }
 
 .apartmentCard {
@@ -44,13 +43,12 @@ a {
 }
 
 .apartmentCard h2 {
-
   color: white;
 }
 
 .card-content {
   height: 260px;
-  background-color: #FF6060;
+  background-color: #ff6060;
 }
 
 .apartmentCard .title {
@@ -75,12 +73,11 @@ a {
     max-width: 95%;
     margin: 1%;
     padding: 0px;
-    
   }
 
   .apartmentCard .title {
     font-size: 2vh;
-   
+
     margin: 0 0 4% 2%;
   }
 }

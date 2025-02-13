@@ -2,18 +2,15 @@
   max-width: 1023px;
   min-height: 52px;
   margin: 25px 0px 26px 0px;
-  overflow: hidden
-
+  overflow: hidden;
 }
 
 .dropdown p {
-
   margin: 10px;
 }
 
 .dropdownContainer {
-
-  background: #FF6060;
+  background: #ff6060;
   padding-top: 17px;
   padding-left: 10px;
   padding-right: 10px;
@@ -23,19 +20,16 @@
   align-items: center;
   justify-content: space-between;
   border-radius: 5px;
-
 }
 
 .dropdownTitle {
   color: white;
-
 }
 
 .toggle {
   border: unset;
   background: none;
   transition: transform 300ms ease-in-out;
-
 }
 
 .toggle.rotate {
@@ -43,27 +37,24 @@
 }
 
 .content {
-  
-  background-color: #F6F6F6;
+  background-color: #f6f6f6;
   overflow: hidden;
   border-radius: 0 0 5px 5px;
   max-height: 0;
-  transition: max-height 0.2s ease, opacity 0.1s ease 0.1s; 
+  transition: max-height 0.2s ease, opacity 0.1s ease 0.1s;
 }
 
 .content.show {
   height: auto;
-  max-height: 500px; 
+  max-height: 500px;
   opacity: 1;
 }
 
 @media screen and (max-width: 860px) {
-
   .dropdown {
     max-width: 1023px;
     min-height: 52px;
     margin: 1% 0px 1% 0px;
-    overflow: hidden
-  
+    overflow: hidden;
   }
 }

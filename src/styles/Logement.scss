@@ -1,147 +1,135 @@
-$font-color: #FF6060;
+$font-color: #ff6060;
 
- .appartementInformation
- {
-    margin: 15px 50px 15px 50px ;
- }
- .logementContainer {
-    min-height: 100vh;
+.appartementInformation {
+  margin: 15px 50px 15px 50px;
+}
+.logementContainer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.proprietorAndApartement {
+  color: $font-color;
+  display: flex;
+  justify-content: space-between;
+  .informationApartement {
     display: flex;
     flex-direction: column;
- }
-.proprietorAndApartement{
-    color: $font-color; 
+  }
+  .proprietorInfo {
     display: flex;
-    justify-content: space-between;
-    .informationApartement {
-        display: flex;
-        flex-direction: column;
+    align-items: center;
+    flex-direction: column;
 
+    .rating {
+      margin-top: 20px;
     }
-    .proprietorInfo{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
 
-        .rating{
-            margin-top: 20px;
-        }
+    .namePicture {
+      display: flex;
+      align-items: center;
 
-        .namePicture{
-            display: flex;
-            align-items: center;
-            
-            .name{
-                width: 50px;
-                height: 40px;
-                margin-right: 40px;
-            }
-        }
- 
+      .name {
+        width: 50px;
+        height: 40px;
+        margin-right: 40px;
+      }
     }
-    .title {
-        font-size: 36px;
-    }
-    img {
-        max-width: 64px;
-        border-radius: 100px;
-        object-fit: cover;
-    }
+  }
+  .title {
+    font-size: 36px;
+  }
+  img {
+    max-width: 64px;
+    border-radius: 100px;
+    object-fit: cover;
+  }
 }
 
-.description-equipements{
-    display:flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+.description-equipements {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 .descriptionDropdown {
-    width: 45%;
+  width: 45%;
 }
-.equipmentDropdown{
-    width:45%;
+.equipmentDropdown {
+  width: 45%;
 }
 
-    .tags{
-        display: flex;
-    .tag{
-        color: white;
-        border-radius: 25px;
-        margin: 20px 20px 20px 0;
-        padding: 10px;
-        background-color: $font-color; 
-    }  
+.tags {
+  display: flex;
+  .tag {
+    color: white;
+    border-radius: 25px;
+    margin: 20px 20px 20px 0;
+    padding: 10px;
+    background-color: $font-color;
+  }
 }
 @media screen and (max-width: 1225px) {
-    .proprietorAndApartement{
-        .title {
-            font-size: 23px;
-        }
-        .proprietorInfo{
-
-            .rating{
-                
-                img{
-                    
-                    width: 30px;
-                }
-            }
-        }
+  .proprietorAndApartement {
+    .title {
+      font-size: 23px;
     }
-    
-
+    .proprietorInfo {
+      .rating {
+        img {
+          width: 30px;
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 860px) {
-    .proprietorAndApartement{
-        display: flex;
-        flex-direction: column;
-        .proprietorInfo{
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            .rating{
-                img{
-                    width: 30px;
-                }
-            }
+  .proprietorAndApartement {
+    display: flex;
+    flex-direction: column;
+    .proprietorInfo {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      .rating {
+        img {
+          width: 30px;
         }
+      }
     }
-    .descriptionEquipements{
-        justify-content: center;
-        flex-direction: column;
-        margin-bottom: 25px;
-        .descriptionDropdown {
-            width: 100%;
-        }
-        .equipmentDropdown{
-            width:100%;
-        }
-}
-.tags{
-
-.tag{
-    font-size: 12px;
-}  
-}
-
+  }
+  .descriptionEquipements {
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+    .descriptionDropdown {
+      width: 100%;
+    }
+    .equipmentDropdown {
+      width: 100%;
+    }
+  }
+  .tags {
+    .tag {
+      font-size: 12px;
+    }
+  }
 }
 
 @media screen and (max-width: 460px) {
-
-    .proprietorAndApartement{
-        .proprietorInfo{
-            .rating{
-                img{
-                    width: 25px;
-                }
-            }
-            .namePicture{
-                .name{
-                    font-size: 12px;
-                    width: 40px;
-                    height: 30px;
-                    margin-right: 20px;
-                }
-            }
-     
+  .proprietorAndApartement {
+    .proprietorInfo {
+      .rating {
+        img {
+          width: 25px;
         }
+      }
+      .namePicture {
+        .name {
+          font-size: 12px;
+          width: 40px;
+          height: 30px;
+          margin-right: 20px;
+        }
+      }
     }
+  }
 }

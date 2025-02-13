@@ -3,7 +3,6 @@ import Header from "../Components/Header";
 import notfound from "../assets/404.png";
 import { Link } from "react-router-dom";
 
-
 const Notfound = () => {
   return (
     <div className="NotFound">
